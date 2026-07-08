@@ -3,7 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "description": "Modern online learning neural network library for real-time user behavior prediction",
-  "workspaces": ["packages/*", "apps/*"],
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
   "scripts": {
     "dev": "bun run --filter='./packages/*' dev",
     "build": "bun run --filter='./packages/*' build",
@@ -14,12 +17,14 @@
     "check": "biome check --write .",
     "typecheck": "bun run --filter='./packages/*' typecheck",
     "clean": "rm -rf packages/*/dist apps/*/dist node_modules/.cache",
-    "verify-docs": "bun run scripts/verify-docs.ts"
+    "verify-docs": "bun run scripts/verify-docs.ts",
+    "lint:fix": "biome check --write ."
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
     "@types/bun": "latest",
-    "typescript": "^5.7.2"
+    "typescript": "^7.0.2",
+    "@sylphx/biome-config": "^0.4.1"
   },
   "engines": {
     "node": ">=18.0.0",

@@ -28,14 +28,21 @@
       "types": "./dist/ab-test.d.ts"
     }
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "bunx tsc",
     "dev": "bunx tsc --watch",
     "typecheck": "bunx tsc --noEmit",
-    "test": "bun test"
+    "test": "bun test",
+    "lint:fix": "biome check --write ."
   },
-  "keywords": ["prediction", "click-prediction", "behavior-prediction"],
+  "keywords": [
+    "prediction",
+    "click-prediction",
+    "behavior-prediction"
+  ],
   "author": "SylphxAI",
   "license": "MIT",
   "dependencies": {
@@ -43,7 +50,9 @@
   },
   "devDependencies": {
     "@types/bun": "latest",
-    "typescript": "^5.7.2"
+    "typescript": "^7.0.2",
+    "@biomejs/biome": "^2.3.12",
+    "@sylphx/biome-config": "^0.4.1"
   },
   "sideEffects": false
 }
