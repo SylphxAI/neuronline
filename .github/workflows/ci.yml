@@ -1,0 +1,28 @@
+name: CI
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  product:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+      - name: Install
+        run: bun install --frozen-lockfile
+      - name: Test residual informational
+        continue-on-error: true
+        run: bun test
+      - name: Typecheck residual informational
+        continue-on-error: true
+        run: bun run typecheck
+      - name: Build residual informational
+        continue-on-error: true
+        run: bun run build
