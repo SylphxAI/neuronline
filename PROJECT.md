@@ -9,7 +9,6 @@ documentation for local personalization use cases.
 
 - State: `active`
 - Layer: `foundation`
-- Machine manifest: [`.doctrine/project.json`](./.doctrine/project.json)
 
 ## Goals
 
@@ -47,7 +46,7 @@ contracts, and production experiment governance.
 - Improvement notes: `IMPROVEMENTS.md`
 - Demo app: `apps/demo/`
 - Human project orientation: `PROJECT.md`
-- Machine-readable project manifest: `.doctrine/project.json`
+- Machine-readable project manifest: 
 
 ## Delivery
 
@@ -61,4 +60,4 @@ contracts, and production experiment governance.
 - Recovery class: `source-revertable`
 
 Adoption is baseline only. The current gaps are tracked in
-`.doctrine/project.json`.
+.
