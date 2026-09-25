@@ -1,5 +1,7 @@
 # NeuronLine
 
+> **Archived — no longer maintained (2026-09-24).** This repository is read-only and has no replacement.
+
 ⚡ Modern online learning neural network library for real-time user behavior prediction
 
 ## Features
